@@ -72,7 +72,7 @@ section {
   background: url("../img/hero-bg.png");
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: center;
+  background-position: left;
 }
 
 .col-md-6 {
@@ -279,10 +279,38 @@ footer {
   color: white;
 }
 
+.mob {
+  display: none;
+}
+
 @media screen and (max-width: 992px) {
-  .flex {
+  nav .flex {
+    flex-direction: revert;
+    gap: 25px;
+  }
+  .btns {
     flex-direction: column;
-    gap: 2px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 5px;
+  }
+  .btns .btn {
+    width: 100%;
+  }
+  .fs-48 {
+    font-size: 28px;
+  }
+  section.we-are-gamer .flex {
+    flex-direction: column;
+  }
+  .text-right {
+    text-align: left;
+  }
+  .text-right {
+    text-align: left;
+  }
+  .container {
+    max-width: 90%;
   }
   .cols-4 {
     grid-template-columns: repeat(2, 1fr);
@@ -293,15 +321,11 @@ footer {
   .w-40 {
     width: 100%;
   }
-  .w-50 {
-    width: 100%;
-  }
+
   .col-md-6 {
     width: 100%;
   }
-  * {
-    text-align: center;
-  }
+
   .title {
     font-size: 50px;
   }
@@ -313,10 +337,87 @@ footer {
     justify-content: center;
     align-items: center;
   }
+  .links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .last {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .icons {
+    width: 45%;
+  }
+  .pc {
+    display: none;
+  }
+  .mob {
+    display: flex;
+  }
+  section.btns .container {
+    max-width: 99%;
+  }
+  .btns .flex {
+    margin-bottom: 40px;
+  }
 }
 
 @media screen and (max-width: 767px) {
+  .w-50 {
+    width: 100%;
+  }
+  .flex {
+    flex-direction: column;
+    gap: 10px;
+  }
+  * {
+    text-align: center;
+  }
   .cols-4 {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  nav .flex {
+    flex-direction: column;
+    gap: 2px;
+  }
+  .hero .flex {
+    flex-direction: column-reverse;
+  }
+  .subtitle {
+    font-size: 30px;
+  }
+  .fs-48 {
+    font-size: 30px;
+  }
+  section.btns .flex {
+    flex-direction: revert;
+  }
+  .icon-btn img {
+    width: 30px;
+  }
+  .icon-btn {
+    font-size: 10px;
+  }
+  .btns .flex {
+    margin-bottom: 25px;
+  }
+  .links {
+    width: 100%;
+  }
+  .links a {
+    font-size: 14px;
+  }
+  .links i {
+    font-size: 16px;
+  }
+  .links.icons {
+    width: 80%;
+  }
+  section.btns .flex {
+    gap: 0;
   }
 }
