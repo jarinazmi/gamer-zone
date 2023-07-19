@@ -1,0 +1,238 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+}
+
+body,
+html {
+  overflow-x: hidden;
+}
+
+nav {
+  padding: 20px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 16px;
+}
+
+.flex {
+  display: flex;
+}
+
+.between {
+  justify-content: space-between;
+}
+.end {
+  justify-content: flex-end;
+}
+.gap-5 {
+  gap: 25px;
+}
+.center {
+  align-items: center;
+}
+
+img {
+  max-width: 100%;
+}
+
+.logo {
+  width: 120px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a.menu-item {
+  display: inline-flex;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.follow-btn {
+  background-color: #e7e6e9;
+  padding: 5px 20px;
+  border-radius: 5px;
+}
+
+section {
+  padding: 35px 0;
+}
+
+.hero {
+  background: url("../img/hero-bg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.col-md-6 {
+  width: 50%;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+
+.f-600 {
+  font-weight: 600;
+}
+
+.bold {
+  font-weight: 700;
+}
+.fs-48 {
+  font-size: 35px;
+}
+.title {
+  font-size: 95px;
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.gap-2 {
+  gap: 10px;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+.mt-20 {
+  margin-top: 20px;
+}
+
+.p-2040 {
+  padding: 20px 40px;
+  border-radius: 50px;
+}
+.btn {
+  border: 0;
+  display: inline-flex;
+}
+.btn-pink {
+  background-color: #ff42a5;
+}
+.fs-20 {
+  font-size: 20px;
+}
+.text-white {
+  color: white;
+}
+.btn-sky {
+  background-color: #4ec5f7;
+}
+
+.we-are-gamer {
+  background-color: rgba(255, 66, 165, 0.03);
+}
+
+.subtitle {
+  font-size: 48px;
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.w-60 {
+  width: 60%;
+}
+
+.w-40 {
+  width: 40%;
+}
+.text-right {
+  text-align: right;
+}
+
+.fs-18 {
+  font-size: 18px;
+}
+.gamer-desc {
+  color: #534c64;
+}
+
+.my-24 {
+  margin: 24px 0;
+}
+
+.text-muted {
+  color: rgba(83, 76, 100, 1);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-black {
+  color: black;
+}
+
+.fs-48 {
+  font-size: 48px;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.mt-48 {
+  margin-top: 48px;
+}
+.grid {
+  display: grid;
+  gap: 24px;
+}
+.cols-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.overlay-holder {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  display: inline-flex;
+}
+
+.overlay {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.overlay:hover {
+  opacity: 1;
+}
+
+.play {
+  width: 100px;
+}
+
+.pink {
+  color: #ff42a5;
+}
+
+.fa-youtube {
+  color: #ff0000;
+}
+
+.fa-tiktok {
+  color: #000000;
+}
