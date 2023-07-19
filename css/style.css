@@ -278,3 +278,45 @@ footer {
 .fa-youtube.text-white {
   color: white;
 }
+
+@media screen and (max-width: 992px) {
+  .flex {
+    flex-direction: column;
+    gap: 2px;
+  }
+  .cols-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .w-60 {
+    width: 100%;
+  }
+  .w-40 {
+    width: 100%;
+  }
+  .w-50 {
+    width: 100%;
+  }
+  .col-md-6 {
+    width: 100%;
+  }
+  * {
+    text-align: center;
+  }
+  .title {
+    font-size: 50px;
+  }
+  svg {
+    display: none;
+  }
+  .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .cols-4 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
